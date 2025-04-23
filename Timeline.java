@@ -10,7 +10,7 @@ public class Timeline {
         String userDir = "users/" + email;
         File followFile = new File(userDir + "/follows.dat");
 
-        // Step 1: Load whom the user is following
+        // Step 1: Memuat siapa yang diikuti pengguna
         if (followFile.exists()) {
             try (BufferedReader reader = new BufferedReader(new FileReader(followFile))) {
                 String line;
@@ -21,7 +21,7 @@ public class Timeline {
             }
         }
 
-        // Step 2: Load each followed user's index
+        // Step 2: Memuat indeks setiap pengguna yang diikuti
         for (String user : following) {
             File indexFile = new File("users/" + user + "/posts.idx");
             if (indexFile.exists()) {
@@ -37,7 +37,7 @@ public class Timeline {
             }
         }
 
-        // Step 3: Read the posts from the posts.dat of each followed user
+        // Step 3: Baca postingan dari setiap pengguna yang diikuti
         for (String user : userPostOffsets.keySet()) {
             File postsFile = new File("users/" + user + "/posts.dat");
             if (postsFile.exists()) {

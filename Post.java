@@ -10,7 +10,7 @@ public class Post {
         String date = LocalDateTime.now().toString();
 
         String userDir = "users/" + email;
-        new File(userDir).mkdirs(); // Create user directory if it doesn't exist
+        new File(userDir).mkdirs(); // Membuat directory baru
 
         File postsFile = new File(userDir + "/posts.dat");
         File indexFile = new File(userDir + "/posts.idx");
