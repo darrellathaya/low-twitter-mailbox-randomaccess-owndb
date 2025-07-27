@@ -16,7 +16,6 @@ This system uses a **custom mailbox-based storage design**, where each user has 
 
 - **User mailbox system** for independent message streams  
 - **Random-access file storage** for fast direct data reads/writes  
-- **Custom encoding with MessagePack** for compact binary storage  
 - **Hot and cold tweet separation** for storage lifecycle management  
 - **User follow system** for personalized timeline views  
 - **Schema evolution** support (add, rename, and remove fields dynamically)  
@@ -45,8 +44,8 @@ Make sure the following are installed:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/darrellathaya/low-twitter-mailbox-randomaccess-encoding-owndb.git
-   cd low-twitter-mailbox-randomaccess-encoding-owndb
+   git clone https://github.com/darrellathaya/low-twitter-mailbox-randomaccess-owndb.git
+   cd low-twitter-mailbox-randomaccess-owndb
    ```
 
 2. **Download Required Dependencies**
