@@ -125,15 +125,15 @@ java -cp ".:lib/*" SchemaEvolver remove <column_name>
 
 ```
 low-twitter-mailbox-randomaccess-encoding-owndb/
-├── lib/                    # External .jar dependencies (MessagePack, Jackson)
-├── users/                  # Mailbox and follower data
-├── Post.java               # CLI for posting messages
-├── PostWithCustomDate.java # Allows setting a custom timestamp
-├── Follow.java             # Follow/unfollow logic
-├── Timeline.java           # Timeline builder based on follow graph
-├── ShowAllTweets.java      # Merges all tweet records for inspection
-├── SearchTweetsByDate.java # Query tweets between date ranges
-├── SchemaEvolver.java      # Handles adding/renaming/removing fields
+├── users/                 # Stores user data (e.g., mailboxes, follow info)
+├── Follow.java            # Defines follow functionality
+├── Follow.class           # Compiled Follow class
+├── Post.java              # Handles posting new messages
+├── Post.class             # Compiled Post class
+├── Timeline.java          # Generates user timeline from follow relationships
+├── Timeline.class         # Compiled Timeline class
+├── posts.idx              # Index file for random access to post data
+├── README.md              # Project documentation
 ```
 
 
