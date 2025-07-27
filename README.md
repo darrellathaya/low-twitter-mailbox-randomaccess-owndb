@@ -16,7 +16,6 @@ This system uses a **custom mailbox-based storage design**, where each user has 
 
 - **User mailbox system** for independent message streams  
 - **Random-access file storage** for fast direct data reads/writes  
-- **Hot and cold tweet separation** for storage lifecycle management  
 - **User follow system** for personalized timeline views  
 - **Schema evolution** support (add, rename, and remove fields dynamically)  
 - **Fully self-contained DB logic** without using external databases  
@@ -89,7 +88,7 @@ java -cp ".:lib/*" Follow <follower_username> <followee_username>
 java -cp ".:lib/*" Timeline <username>
 ```
 
-### Display All Stored Tweets (Hot + Cold)
+### Display All Stored Tweets
 ```bash
 java -cp ".:lib/*" ShowAllTweets
 ```
